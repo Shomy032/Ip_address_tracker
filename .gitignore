@@ -17,3 +17,4 @@
 # ignore all guide files from FEM
 .README-template.md
 .style-guide.md
+.style.css.map

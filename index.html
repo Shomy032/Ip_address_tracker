@@ -2,33 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | IP Address Tracker</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>IP Address Tracker</title>
+  <!-- j-query lib link -->
+<script src="./jquery-3.6.0.min.js"></script>
+  <!--  -->
+<!-- map link to library -->
+  <link rel="stylesheet" href="library-map/leaflet.css" />
+  <script src="/library-map/leaflet.js"></script>
+  <!--  -->
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
 </head>
+<!--  -->
 <body>
-
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
+  <div class="up">
+<h1>IP Address Tracker</h1>
+<form id="form">
+  <input id="input_ip" type="text" name="ip_input" placeholder="Enter your ip here">
+  <button id="btn" type="submit" name="submit_btn">V</button>
+</form>
+<div class="info">
+  <ul>
+    <li>
+      <p>IP Address</p>
+      <h2 id="ip_text">ip</h2>
+    </li>
+    <li>
+      <p>Location</p>
+      <h2 id="location">Broklin NU 123123</h2>
+    </li>
+    <li>
+      <p>Timezone</p>
+      <h2 id="tim">UTC - 05.00</h2>
+    </li>
+    <li>
+      <p>ISP</p>
+      <h2 id="isp">Space x /spaceX</h2>
+    </li>
+  </ul>
+</div>
+</div>
+<div id="map_container">
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+</div>
+
+<!-- script for api data-->
+<script src="./main.js" defer></script>
+<!--  -->
 </body>
 </html>
