@@ -1,0 +1,38 @@
+@media  screen and (max-width: 840px){
+.up{
+  form{
+    width: 80vw;
+  }
+}
+ .info{
+  height: auto;
+  transform: translate(-50% , 80%);
+  ul{
+    flex-direction: column;
+    
+
+    li{
+      width: 100%;
+      align-items: center;
+      h2 ,p{
+        margin-top: 0.2rem;
+        text-align: center;
+      }
+      
+      }
+
+  }
+ }
+ .alert_true{
+  left: 2rem;
+ }
+ 
+ #mapid{
+  width: 100vw;
+  height: 65vh;
+  margin: 0rem auto;
+
+ z-index: 9;
+}
+}
+

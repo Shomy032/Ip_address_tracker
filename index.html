@@ -13,14 +13,17 @@
   <!--  -->
   <!-- css link -->
   <link rel="stylesheet" href="style.css">
+<!-- font awesome link -->
+<script src="https://kit.fontawesome.com/9f29b1c5a3.js" crossorigin="anonymous"></script>
 </head>
 <!--  -->
 <body>
   <div class="up">
 <h1>IP Address Tracker</h1>
 <form id="form">
-  <input id="input_ip" type="text" name="ip_input" placeholder="Enter your ip here">
-  <button id="btn" type="submit" name="submit_btn">V</button>
+  <input id="input_ip" type="text" name="ip_input" placeholder="Enter your ip" autocomplete="off">
+  <button id="btn" type="submit" name="submit_btn"><i class="fas fa-chevron-right"></i></button>
+  <div id="alert" class="alert_true">Please enter valid ip address</div>
 </form>
 <div class="info">
   <ul>

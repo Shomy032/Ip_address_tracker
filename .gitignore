@@ -12,9 +12,9 @@
 *.fig
 
 # Avoid your project being littered with annoying .DS_Store files!
-.DS_Store
+*.DS_Store
 
 # ignore all guide files from FEM
-.README-template.md
-.style-guide.md
-.style.css.map
+*.README-template.md
+*.style-guide.md
+*.style.css.map
