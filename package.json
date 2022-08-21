@@ -1,0 +1,29 @@
+{
+  "name": "ip_address_tracker",
+  "version": "1.0.0",
+  "description": "ip addres tracker",
+  "main": "src/main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style-w": "sass --watch src/styles/style.scss src/styles/style.css",
+    "build": "sass src/styles/style.scss src/styles/style.css",
+    "start": "live-server ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shomy032/Ip_address_tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shomy032/Ip_address_tracker/issues"
+  },
+  "homepage": "https://github.com/Shomy032/Ip_address_tracker#readme",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.54.5"
+  }
+}

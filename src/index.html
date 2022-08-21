@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Address Tracker</title>
+  <!-- j-query lib link -->
+  <script src="./../lib/jquery-3.6.0.min.js"></script>
+  <!--  -->
+  <!-- map link to library -->
+  <link rel="stylesheet" href="./../library-map/leaflet.css" />
+  <script src="./../library-map/leaflet.js"></script>
+  <!--  -->
+  <!-- css link -->
+  <link rel="stylesheet" href="./../src/styles/style.css">
+  <!-- font awesome link -->
+  <script src="https://kit.fontawesome.com/9f29b1c5a3.js" crossorigin="anonymous"></script>
+</head>
+<!--  -->
+
+<body>
+  <div class="up">
+    <h1>IP Address Tracker</h1>
+    <form id="form">
+      <input id="input_ip" type="text" name="ip_input" placeholder="Enter your ip" autocomplete="off">
+      <button id="btn" type="submit" name="submit_btn"><i class="fas fa-chevron-right"></i></button>
+      <div id="error-text" class="alert_true">Please enter valid ip address</div>
+    </form>
+    <div class="info">
+      <ul>
+        <li>
+          <p>IP Address</p>
+          <h2 id="ip_text">ip</h2>
+        </li>
+        <li>
+          <p>Location</p>
+          <h2 id="location">Broklin NU 123123</h2>
+        </li>
+        <li>
+          <p>Timezone</p>
+          <h2 id="tim">UTC - 05.00</h2>
+        </li>
+        <li>
+          <p>ISP</p>
+          <h2 id="isp">Space x /spaceX</h2>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="map_container">
+
+  </div>
+
+  <!-- script for api data-->
+  <script src="./main.js" defer></script>
+  <!--  -->
+</body>
+
+</html>
